@@ -1,0 +1,22 @@
+@import 'tailwindcss';
+
+@source '../../vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php';
+@source '../../storage/framework/views/*.php';
+
+@theme {
+    --font-sans: 'Outfit', 'Inter', ui-sans-serif, system-ui, sans-serif;
+    --color-pupr-blue: #0b3b60;
+    --color-pupr-blue-dark: #07253d;
+    --color-pupr-blue-light: #16568a;
+    --color-pupr-yellow: #feca0a;
+    --color-pupr-yellow-dark: #dca700;
+}
+
+@layer utilities {
+    .glass {
+        @apply bg-white/70 backdrop-blur-md border border-white/20;
+    }
+    .glass-dark {
+        @apply bg-pupr-blue/80 backdrop-blur-md border border-white/10;
+    }
+}
