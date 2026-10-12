@@ -1,58 +1,89 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+# Dinas PUPR Kabupaten Bombana Website
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+A company profile website developed for the Public Works and Spatial Planning Agency of Bombana Regency as part of a software development project at Smart Inovasi Software House.
 
-## About Laravel
+## Overview
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+This project provides a web platform for presenting the agency's organizational information and public-facing content.
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+## Tech Stack
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+- **Language:** PHP
+- **Framework:** Laravel
+- **Admin Panel:** Filament
+- **Styling:** Tailwind CSS
+- **Frontend Build Tool:** Vite
 
-## Learning Laravel
+## My Contributions
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+- Developed website components and functionality for the agency's company profile.
+- Implemented revisions and improvements based on feedback from the development team.
 
-In addition, [Laracasts](https://laracasts.com) contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+## Getting Started
 
-You can also watch bite-sized lessons with real-world projects on [Laravel Learn](https://laravel.com/learn), where you will be guided through building a Laravel application from scratch while learning PHP fundamentals.
+### Prerequisites
 
-## Agentic Development
+Ensure the following tools are installed:
 
-Laravel's predictable structure and conventions make it ideal for AI coding agents like Claude Code, Cursor, and GitHub Copilot. Install [Laravel Boost](https://laravel.com/docs/ai) to supercharge your AI workflow:
+- PHP (compatible with the project's requirements)
+- Composer
+- Node.js and npm
+- A database configured for the application, if required
 
-```bash
-composer require laravel/boost --dev
+### Installation
 
-php artisan boost:install
-```
+1. Clone the repository:
 
-Boost provides your agent 15+ tools and skills that help agents build Laravel applications while following best practices.
+   ```bash
+   git clone https://github.com/fadhlimuhammad/pupr-bombana.git
+   cd pupr-bombana
+   ```
 
-## Contributing
+2. Install PHP dependencies:
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+   ```bash
+   composer install
+   ```
 
-## Code of Conduct
+3. Create the environment configuration:
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+   ```bash
+   cp .env.example .env
+   ```
 
-## Security Vulnerabilities
+4. Generate the application key:
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+   ```bash
+   php artisan key:generate
+   ```
 
-## License
+5. Configure the required environment variables in `.env`, including the database connection if applicable.
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+6. Install frontend dependencies and build the assets:
+
+   ```bash
+   npm install
+   npm run build
+   ```
+
+7. Run database migrations if required by the application:
+
+   ```bash
+   php artisan migrate
+   ```
+
+8. Start the local development server:
+
+   ```bash
+   php artisan serve
+   ```
+
+   Open the local URL displayed in your terminal.
+
+## Project Status
+
+Developed and deployed as part of a software development project at Smart Inovasi Software House.
+
+## Notes
+
+This repository represents a professional project. Please ensure that any redistribution or reuse of its source code is authorized by the relevant project owner.
